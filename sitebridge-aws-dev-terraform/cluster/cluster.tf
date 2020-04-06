@@ -134,12 +134,13 @@ data "external" "get_ips" {
   query = {
     # arbitrary map from strings to strings, passed
     # to the external program as the data query.
-    public_ips   = "${var.externalIPs}"
-    private_ips  = ""
-    prefix_name  = "${instanceNamePrefix}"
-    suffix_name  = "${instanceNameSuffix}"
-    region       = "${var.region}"
-    set_tags     = "0"
+    public_ips = "${var.externalIPs}"
+
+    private_ips = ""
+    prefix_name = "${instanceNamePrefix}"
+    suffix_name = "${instanceNameSuffix}"
+    region      = "${var.region}"
+    set_tags    = "0"
   }
 }
 

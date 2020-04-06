@@ -18,7 +18,7 @@ variable "region" {
 
 provider "aws" {
   assume_role {
-    role_arn    = "arn:aws:iam::099350349688:role/sitebridge-terraform/sitebridge-terraform"
+    role_arn    = "arn:aws:iam::592790597790:instance-profile/sitebridge-terraform-deploy-aws-devTest"
     external_id = "Terraform"
   }
 

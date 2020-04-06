@@ -8,7 +8,7 @@ terraform {
     encrypt        = true
     kms_key_id     = "3925d0ee-f32c-441b-83d5-84e6575a52b3"
     dynamodb_table = "sitebridge-terraform-deploy-aws-dev-state-lock"
-    role_arn       = "arn:aws:iam::099350349688:role/sitebridge-terraform/sitebridge-terraform"
+    role_arn       = "arn:aws:iam::592790597790:instance-profile/sitebridge-terraform-deploy-aws-devTest"
     external_id    = "Terraform"
     region         = "us-west-2"
   }
@@ -16,7 +16,7 @@ terraform {
 
 provider "aws" {
   assume_role {
-    role_arn    = "arn:aws:iam::099350349688:role/sitebridge-terraform/sitebridge-terraform"
+    role_arn    = "arn:aws:iam::592790597790:instance-profile/sitebridge-terraform-deploy-aws-devTest"
     external_id = "Terraform"
   }
 
